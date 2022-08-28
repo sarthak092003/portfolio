@@ -1,0 +1,369 @@
+*{
+    box-sizing: border-box;
+}
+#intro{
+    height: 500px;
+}
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-color:rgb(23,19,33);
+    color:rgba(255, 255, 255, 0.918);
+    padding: 0;
+    margin: 0;
+  }
+  /* intro */
+  .bio{
+    font-size:40px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    height:40px
+  }
+  .nav-bar [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+  }
+  
+  .blocky{
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 15px;
+    margin:200px,0,8px,0;
+  }
+
+  .name{
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    font-size: 40px;
+    margin-top: 4px;
+    margin-left: 0;
+    color: rgb(134,251,251);
+    font-weight: 600;
+  }
+  #intro.description{
+    font-size:16px;
+    margin-top:10px;
+    margin-left:0; 
+    background-color: none;
+  }
+  .option{
+    text-align: center;
+    font-size: 0.8rem;
+    display: flex;
+    font-family: 'Oxygen Mono', monospace;
+    padding: 10px 0 ;
+  }
+  .option:first-child{
+    color: aliceblue;
+  }
+  /* contact */
+  .contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #085454;
+    padding-bottom:5px ;
+  }
+  .contact{
+    margin: 8px;
+    font-size: 2em;
+    color: aqua;
+  }
+  .contact-me p{
+    margin: 5px;
+  }
+  
+ 
+  .option li:first-child{
+    font-size: 2rem;
+    color: wheat;
+    font-family: var(Oxygen);
+    flex-basis: auto;
+    margin-right: auto;
+  }
+  .nav-name{
+    display: inline-block;
+    
+
+  }
+  
+  .option a{
+    margin: 0 40px;
+    font-family: 'Oxygen Mono', monospace;
+    text-decoration: none;
+  }
+  .option a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+    user-select: none;
+  }
+  a{
+    color: azure;
+  }
+  .footer{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+    flex-wrap: wrap;
+  }
+  .credit{
+    text-align: center;
+  }
+  .footer h2{
+    color: aquamarine;
+    text-align: center;
+  }
+  .foot a{
+    color: beige;
+    text-decoration: none;
+  }
+  .foot a:hover{
+    text-decoration: underline;
+    color: aqua;
+  }
+  log{
+    color: white;
+  }
+  .nav-name log{
+    color: white;
+  }
+.nav-bar log{
+    font-size: 150%;
+    color: #1c5e6b;
+  }
+  .nav-bar log:hover{
+    color: antiquewhite;
+  }
+#intro{
+    max-width: 1200px;
+    padding: 3rem 2rem 2rem 11.7rem;
+    margin: 0 auto;
+}
+.button{
+    background-color: #10454F;
+    border: none;
+    border-radius: 7%;
+    font-family: 'Oxygen Mono', monospace;
+    color: aliceblue;
+    margin: 5px;
+    height: 30px;
+    font-size: 15px;
+    padding: 5px 5px;
+    
+  }
+  .button:hover{
+    text-decoration: underline;
+
+  }
+  .gradient{
+    background: radial-gradient(circle, rgba(209,10,10,1) 0%, rgba(9,9,121,1) 53%, rgba(0,212,255,1) 100%);
+    height: 2px;
+  }
+  @media(max-width:550px){
+    .option{
+      display: flex;
+      flex-direction: column;
+    }
+    .bio{
+      display: inline;
+    }
+    .option li:first-child{
+      margin: 0 auto;
+    }
+    #intro{
+      padding: 0;
+      height: 350px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+
+  }
+  /* This CSS was copied from our portfolio site at the end of chapter 4, from VSCode.
+
+variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+
+/* border box model: https://css-tricks.com/box-sizing/ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/* generic styles for the page */
+.project{
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--dkblue);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+.project h1,
+.project h2,
+.project h3, .project h4 {
+  margin: 0;
+}
+.project h5{
+  margin: 0.3rem;
+  font-size: 1rem;
+}
+
+.project a {
+  color: var(--magenta);
+}
+.port{
+  margin-bottom: 40px;
+}
+.text{
+  margin: 0;
+  padding: 0;
+}
+
+.project a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+.project{
+  padding: 4rem 1rem;
+  background-color: var(--dkblue);
+  margin: 0;
+}
+.project h1{
+  text-align: center;
+
+}
+.project h2{
+  color: var(--aqua);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.description{
+  background-color: var(--black);
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.tech-used{
+  font-family: var(--mono);
+  font-weight: 700;
+}
+
+.project ul{
+  list-style: bullets;
+  display: flex;
+  flex-direction: column;
+}
+.project li{
+  margin: 8px;
+}
+.image{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.border{
+  justify-content: center;
+  margin: 0 auto;
+  padding: 7px;
+  border-top: solid 3px var(--aqua);
+  border-left: solid 3px var(--aqua);
+  border-radius: 11px;
+}
+img{
+  margin: 7px auto;
+  padding: 8px;
+  width: 100%;
+}
+@media(min-width:550px) {
+  .project h1{
+      margin-bottom: 4rem;
+      text-align:left;  
+  }
+  .project ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    font-family: var(--mono);
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    flex-flow: row wrap;
+  }
+  .project{
+      padding-top:1.5rem ;
+  }
+  
+  .project article{
+      display: grid;
+      grid-template-columns: repeat(10,1fr);
+      gap: 1rem;
+  }
+  .text{
+      grid-row: 1/2;
+      grid-column: 5/11;
+      text-align: right;
+      order: 2;
+  }
+  .project ul{
+      justify-content: right;
+  }
+  .image{
+      grid-row: 1/2;
+      grid-column: 1/6;
+      width: 100%;
+  }
+  .reverse.image{
+      grid-row: 1/2;
+      grid-column: 6/11;
+  }
+  .reverse.text{
+      grid-row: 1/2;
+      grid-column: 1/7;
+      order: 2;
+      text-align: left;
+  }
+  .reverse ul{
+      justify-content: left;
+  }
+
+}
+.head{
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
